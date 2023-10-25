@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4hwgkpfjdpoy"]
+
+[ext_resource type="PackedScene" uid="uid://cb4ocbwl3wo0j" path="res://player.tscn" id="1_mm5ub"]
+[ext_resource type="PackedScene" uid="uid://dh2h41af0xip3" path="res://box.tscn" id="2_1fska"]
+
+[node name="Main" type="Node"]
+
+[node name="Box" parent="." instance=ExtResource("2_1fska")]
+z_index = 0
+
+[node name="Player" parent="." instance=ExtResource("1_mm5ub")]
+z_index = 1
